@@ -3,11 +3,7 @@ import sys
 import os
 import h5py
 
-from scipy.special import logsumexp
 from sklearn.decomposition import IncrementalPCA
-
-def softmax(x,axis=None):
-    return np.exp(x - logsumexp(x, axis=axis, keepdims=True))
 
 # PLACEHOLDER FUNCTION
 def batch_array(rows,columns):
